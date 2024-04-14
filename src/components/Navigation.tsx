@@ -41,10 +41,6 @@ const Navigation = () => {
 
   return (
     <>
-      {showMobileAsideState.value &&
-        orientationState.value === orientations.VERTICAL && (
-          <div className="backdrop" onClick={showMobileAsideState.toggle} />
-        )}
       <nav
         className={`${isVerticalOrientation ? "aside-nav" : "top-nav"} ${
           showMobileAsideState.value ? "show" : ""
@@ -65,8 +61,11 @@ const Navigation = () => {
           </div>
           <ul>
             {navItems.map((item) => (
-              <Tooltip title={item.title}>
-                <li className={item.active ? "active" : ""} key={item.title}>
+              <Tooltip
+                key={item.title}
+                title={isVerticalOrientation ? "" : item.title}
+              >
+                <li className={item.active ? "active" : ""}>
                   {item.icon}
                   {isVerticalOrientation && <span>{item.title}</span>}
                 </li>

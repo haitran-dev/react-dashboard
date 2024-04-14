@@ -61,6 +61,9 @@ const LayoutProvider = ({ children }: LayoutProviderProps) => {
           </IconButton>
         </Tooltip>
       </div>
+      {showMobileAside && orientation === orientations.VERTICAL && (
+        <div className="backdrop" onClick={toggleShowMobileAside} />
+      )}
     </LayoutContext.Provider>
   );
 };

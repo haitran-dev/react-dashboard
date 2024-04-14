@@ -1,0 +1,102 @@
+[
+  {
+    "id": "3",
+    "customer_name": "John Doe",
+    "location": "London",
+    "order_date": "2024-04-02",
+    "order_device": "phone",
+    "platform": "Facebook",
+    "status": "Shipped",
+    "total_price": 50
+  },
+  {
+    "id": "4",
+    "customer_name": "Jane Doe",
+    "location": "Hanoi",
+    "order_date": "2024-04-03",
+    "order_device": "computer",
+    "platform": "Facebook",
+    "status": "Processing",
+    "total_price": 25.99
+  },
+  {
+    "id": "5",
+    "customer_name": "Mike Smith",
+    "location": "London",
+    "order_date": "2024-04-04",
+    "order_device": "tablet",
+    "platform": "Facebook",
+    "status": "Pending",
+    "total_price": 73.42
+  },
+  {
+    "id": "6",
+    "customer_name": "Alice Johnson",
+    "location": "Brussels",
+    "order_date": "2024-04-05",
+    "order_device": "phone",
+    "platform": "Facebook",
+    "status": "Cancelled",
+    "total_price": 0.0
+  },
+  {
+    "id": "7",
+    "customer_name": "William Brown",
+    "location": "Taipei",
+    "order_date": "2024-04-06",
+    "order_device": "computer",
+    "platform": "Facebook",
+    "status": "Shipped",
+    "total_price": 109.95
+  },
+  {
+    "id": "8",
+    "customer_name": "Olivia Jones",
+    "location": "New York",
+    "order_date": "2024-04-08",
+    "order_device": "tablet",
+    "platform": "Facebook",
+    "status": "Processing",
+    "total_price": 42.11
+  },
+  {
+    "id": "9",
+    "customer_name": "Charles Davis",
+    "location": "London",
+    "order_date": "2024-04-09",
+    "order_device": "phone",
+    "platform": "Facebook",
+    "status": "Shipped",
+    "total_price": 31.0
+  },
+  {
+    "id": "10",
+    "customer_name": "Emma Miller",
+    "location": "London",
+    "order_date": "2024-04-10",
+    "order_device": "computer",
+    "platform": "Facebook",
+    "status": "Pending",
+    "total_price": 12.5
+  },
+  {
+    "id": "11",
+    "customer_name": "Noah Garcia",
+    "location": "London",
+    "order_date": "2024-04-11",
+    "order_device": "tablet",
+    "platform": "Facebook",
+    "status": "Shipped",
+    "total_price": 88.76
+  },
+  {
+    "id": "12",
+    "customer_name": "Sophia Hernandez",
+    "location": "Amsterdam",
+    "order_date": "2024-04-12",
+    "order_device": "phone",
+    "platform": "Facebook",
+    "status": "Processing",
+    "total_price": 15.99
+  }
+]
