@@ -48,6 +48,7 @@ const Content = () => {
             margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
           />
         </WidgetBox>
+
         <WidgetBox classNames="small" title="Orders by quarter">
           <BarChart
             series={[

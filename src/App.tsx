@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { Content, Navigation } from "./components";
 import LayoutProvider from "./contexts/LayoutProvider";
 
