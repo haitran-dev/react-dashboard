@@ -1,11 +1,11 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton, Tooltip } from "@mui/material";
+import { BarChart, LineChart } from "@mui/x-charts";
 import { useContext } from "react";
-import { LayoutContext } from "../contexts/LayoutProvider";
 import { orientations } from "../constants/orientations";
+import { LayoutContext } from "../contexts/LayoutProvider";
 import OrdersTable from "./OrdersTable";
 import WidgetBox from "./WidgetBox";
-import { BarChart, LineChart, PieChart } from "@mui/x-charts";
 
 const Content = () => {
   const { showMobileAsideState, orientationState } = useContext(LayoutContext);
