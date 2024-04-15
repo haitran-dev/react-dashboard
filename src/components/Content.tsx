@@ -13,7 +13,7 @@ const Content = () => {
   const isVerticalMode = orientationState.value === orientations.VERTICAL;
 
   return (
-    <div className={`main-content ${!isVerticalMode && "horizontal"}`}>
+    <div className={`main-content ${!isVerticalMode ? "horizontal" : ""}`}>
       {isVerticalMode && (
         <div className="content-top">
           <Tooltip title="Open menu" className="menu-toggle">
