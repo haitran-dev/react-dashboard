@@ -1,0 +1,24 @@
+.widget-box {
+  background-color: var(--light-bg);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  height: fit-content;
+
+  &.small {
+    grid-column: var(--grid-col-small);
+  }
+
+  &.medium {
+    grid-column: var(--grid-col-medium);
+  }
+
+  &.large {
+    grid-column: var(--grid-col-large);
+  }
+
+  .widget-header {
+    margin-bottom: 0.5rem;
+    color: var(--light-active);
+    font-size: small;
+  }
+}

@@ -22,7 +22,6 @@ html {
 
   /* mobile */
   @media screen and (min-width: 0) {
-    --toggle-rotate-btn-display: hidden;
     --nav-header-text-display: none;
     --grid-col-small: span 12;
     --grid-col-medium: span 12;
@@ -30,7 +29,6 @@ html {
 
   /* tablet */
   @media screen and (min-width: 768px) {
-    --toggle-rotate-btn-display: visible;
     --nav-header-text-display: none;
     --grid-col-small: span 4;
     --grid-col-medium: span 12;
@@ -42,7 +40,6 @@ html {
     --main-content-margin-left: var(--aside-nav-width);
     --mobile-backdrop-display: none;
     --toggle-aside-btn-display: hidden;
-    --toggle-rotate-btn-display: visible;
     --nav-header-text-display: inline;
     --grid-col-small: span 4;
     --grid-col-medium: span 6;
@@ -53,150 +50,10 @@ html,
 body,
 #root,
 main {
-  height: 100%;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--main-bg);
-
-  .aside-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    overflow-x: hidden;
-    transform: translateX(var(--aside-nav-translateX));
-    transition: transform 0.3s;
-    z-index: 20;
-
-    &.show {
-      transform: translateX(0);
-    }
-  }
-
-  .top-nav {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    display: flex;
-  }
-
-  .nav-wrapper {
-    overflow-y: auto;
-    background-color: var(--light-bg);
-    width: var(--aside-nav-width);
-    height: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    box-shadow: var(--shadow-light);
-
-    &.horizontal {
-      flex-direction: row;
-      width: 100%;
-      gap: 1rem;
-
-      ul {
-        margin: 0 auto;
-        flex-direction: row;
-        align-items: center;
-      }
-
-      .nav-header {
-        position: absolute;
-
-        .nav-header-text {
-          display: var(--nav-header-text-display);
-        }
-      }
-    }
-
-    .nav-header {
-      display: flex;
-      height: 2.5rem;
-      column-gap: 1rem;
-      align-items: center;
-
-      .nav-header-logo {
-        width: 2rem;
-      }
-      .nav-header-text {
-        font-weight: bold;
-        font-size: large;
-      }
-    }
-
-    ul {
-      display: flex;
-      gap: 0.5rem;
-      flex-direction: column;
-      padding: 0;
-      list-style: none;
-
-      li {
-        display: flex;
-        align-items: center;
-        column-gap: 1rem;
-        padding: 0.5rem;
-        border-radius: 0.25rem;
-        cursor: pointer;
-
-        &.active {
-          color: var(--light-active);
-          font-weight: bold;
-        }
-
-        &:hover {
-          background-color: var(--light-hover-bg);
-        }
-      }
-    }
-  }
-
-  .main-content {
-    min-width: 375px;
-    margin-left: var(--main-content-margin-left);
-    transition: 0.3s;
-    flex: 1;
-    padding: 1rem;
-    background-color: var(--main-bg);
-    display: flex;
-    flex-direction: column;
-
-    &.horizontal {
-      margin-left: 0;
-    }
-
-    .content-top {
-      position: sticky;
-      top: 1rem;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5rem;
-      padding-top: 0;
-      z-index: 1;
-
-      .menu-toggle {
-        background-color: var(--light-active);
-        color: var(--light-bg);
-        visibility: var(--toggle-aside-btn-display);
-      }
-    }
-
-    .content-area {
-      display: grid;
-      grid-template-columns: repeat(var(--grid-col-total), minmax(0, 1fr));
-      gap: 1rem;
-    }
-  }
+  min-height: 100%;
 }
 
 .rotate-toggle {
-  visibility: var(--toggle-rotate-btn-display);
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -215,41 +72,4 @@ main {
   background-color: rgba(0, 0, 0, 0.2);
   inset: 0;
   z-index: 2;
-}
-
-.col-span-4 {
-  grid-column: span 4;
-}
-
-.col-span-6 {
-  grid-column: span 6;
-}
-
-.col-span-12 {
-  grid-column: span 12;
-}
-
-.widget-box {
-  background-color: var(--light-bg);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  height: fit-content;
-
-  &.small {
-    grid-column: var(--grid-col-small);
-  }
-
-  &.medium {
-    grid-column: var(--grid-col-medium);
-  }
-
-  &.large {
-    grid-column: var(--grid-col-large);
-  }
-
-  .widget-header {
-    margin-bottom: 0.5rem;
-    color: var(--light-active);
-    font-size: small;
-  }
 }

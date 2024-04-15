@@ -4,6 +4,7 @@ import { BarChart, LineChart } from "@mui/x-charts";
 import { useContext } from "react";
 import { orientations } from "../constants/orientations";
 import { LayoutContext } from "../contexts/LayoutProvider";
+import "../styles/main-content.scss";
 import OrdersTable from "./OrdersTable";
 import WidgetBox from "./WidgetBox";
 

@@ -3,11 +3,12 @@ import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
 import DevicesOutlinedIcon from "@mui/icons-material/DevicesOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import SpaceDashboardOutlinedIcon from "@mui/icons-material/SpaceDashboardOutlined";
+import { Tooltip } from "@mui/material";
 import { useContext } from "react";
-import { LayoutContext } from "../contexts/LayoutProvider";
 import ReactIcon from "../assets/react.svg";
 import { orientations } from "../constants/orientations";
-import { Tooltip } from "@mui/material";
+import { LayoutContext } from "../contexts/LayoutProvider";
+import "../styles/nav.scss";
 
 const navItems = [
   {
